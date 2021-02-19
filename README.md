@@ -5,5 +5,6 @@ The images will be processed into Cleargrasp's style of data, and can be used af
 <p align="center">
   <img src="Assets/Showcase.png" alt="drawing" width="600"/>
 </p>
-<p align="center"> Image, Ground Truth, Prediction 
+<p align="center"> Image from WIP. Code and Application will be released soon.
+
 This repo is a work in progress. 
