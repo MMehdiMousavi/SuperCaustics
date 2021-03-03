@@ -34,29 +34,45 @@ interval = 0.05 #Interval in seconds
 moves_file = "ProbeLog\Supercaustics.txt"
 
 ku = KeyUtils()
-pkey = Probe()
+pkey = Probe()  
 k = PyKeyboard()
-generate_settings(10, moves_file)
+setsize = 100
+generate_settings(setsize, moves_file)
 
 ##############################################################################
 # GATHER DATA
 ##############################################################################
 file = open(moves_file)
+counter = 0
 for action in list(file.readlines()):
-    Mat, HDRI, Lighting = action.split(',')
+    Mat, HDRI, Lighting, ToteBox = action.split(',')
 
     Mat = int(Mat)
     HDRI = int(HDRI)
     Lighting = int(Lighting)
+    ToteBox = int(ToteBox)
+
+    print('image set ' + str(counter) + ' of ' + str(setsize))
+    print("settings: " + str(action))                                                                                    ECETCTR
+    counter += 1
+
+    pkey.reset()
+
+    if ToteBox == 1:
+        k.tap_key('U', n=1, interval=interval)
+
+    time.sleep(5)
+
     k.tap_key('M', n=Mat, interval=interval)
     k.tap_key('H', n=HDRI, interval=interval)
     k.tap_key('L', n=Lighting, interval=interval)
 
-    for angle in range(0,6):
+    for angle in range(0, 6):
         k.tap_key('V', n=1, interval=interval)
         pkey.capture()
+        time.sleep(10*interval)
+                      
 
-    pkey.reset()
 
 # Pause at the end to avoid transitioning away from the game too abruptly
 time.sleep(0.5)

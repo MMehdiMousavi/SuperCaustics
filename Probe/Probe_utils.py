@@ -18,10 +18,11 @@ def generate_settings(n_settings=3, file_name=None):
 
     file = open(file_name, 'w')
     for i in range(n_settings):
-        Mat = np.random.randint(0, 40)  #choose between 40 materials.
-        HDRI = np.random.randint(0, 29) #choose between 29 HDRI maps.
-        Lighting = np.random.randint(0, 5) #choose Lighting position
-        file.write(','.join([str(Mat), str(HDRI), str(Lighting)]))
+        Mat = np.random.randint(0, 41)  #choose between 40 materials.
+        HDRI = np.random.randint(0, 30) #choose between 29 HDRI maps.
+        Lighting = np.random.randint(0, 6) #choose Lighting position
+        ToteBox = np.random.randint(0,2) #totebox or no totebox
+        file.write(','.join([str(Mat), str(HDRI), str(Lighting), str(ToteBox)]))
         file.write('\n')
     file.close()
 
@@ -31,7 +32,7 @@ class Probe:
 
     def press(self, key):
         self.k.press_key(key)
-        time.sleep(0.1)
+        time.sleep(0.5)
         self.k.release_key(key)
 
     def screenshot(self):
@@ -39,7 +40,6 @@ class Probe:
 
     def reset(self):
         self.press('q')
-        time.sleep(5)
 
     def outline(self):
         self.press('o')
@@ -53,37 +53,37 @@ class Probe:
     def depth(self):
         self.press('t')
 
-    def surface_normal(self):
+    def surface_normal(self):                        
         self.press('r')
 
     def capture(self):
         
         self.screenshot()
-        time.sleep(0.1)
+        time.sleep(0.25)
 
         self.no_caustic()
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.no_caustic()
 
         self.depth()  # depth
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.depth()
 
         self.surface_normal()
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.surface_normal()
 
         self.outline()
-        time.sleep(0.1)
+        time.sleep(0.25)
         self.screenshot()
         self.outline()
 
         self.global_gt()  # global gt
-        time.sleep(0.4)
-        self.screenshot()
+        time.sleep(0.25)
+        self.screenshot()       
         self.global_gt()
 
 
