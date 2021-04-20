@@ -37,7 +37,7 @@ ku = KeyUtils()
 pkey = Probe()
 k = PyKeyboard()
 setsize = 1601
-#generate_settings(setsize, moves_file)
+generate_settings(setsize, moves_file)
 
 ##############################################################################
 # GATHER DATA
@@ -67,7 +67,7 @@ for action in list(file.readlines()):
     k.tap_key('H', n=HDRI, interval=interval)
     k.tap_key('L', n=Lighting, interval=interval)
 
-    for angle in range(0, 8):
+    for angle in range(0, 12):
         k.tap_key('V', n=1, interval=interval)
         pkey.capture()
         time.sleep(1*interval)

@@ -81,15 +81,15 @@ class Probe:
         self.screenshot()
         self.surface_normal()
 
-        self.outline()
-        time.sleep(0.05)
-        self.screenshot()
-        self.outline()
-
-        self.global_gt()  # global gt
-        time.sleep(0.05)
-        self.screenshot()       
-        self.global_gt()
+        # self.outline()
+        # time.sleep(0.05)
+        # self.screenshot()
+        # self.outline()
+        #
+        # self.global_gt()  # global gt
+        # time.sleep(0.05)
+        # self.screenshot()
+        # self.global_gt()
 
 
 
