@@ -31,13 +31,13 @@ interval = 0.05 #Interval in seconds
 ##############################################################################
 # LOOKING AROUND RANDOMLY
 ##############################################################################
-moves_file = "ProbeLog\Supercaustics.txt"
+moves_file = "ProbeLog\Supercaustics_8Cameras.txt"
 
 ku = KeyUtils()
-pkey = Probe()  
+pkey = Probe()
 k = PyKeyboard()
-setsize = 100
-generate_settings(setsize, moves_file)
+setsize = 1601
+#generate_settings(setsize, moves_file)
 
 ##############################################################################
 # GATHER DATA
@@ -53,7 +53,7 @@ for action in list(file.readlines()):
     ToteBox = int(ToteBox)
 
     print('image set ' + str(counter) + ' of ' + str(setsize))
-    print("settings: " + str(action))                                                                                    ECETCTR
+    print("settings: " + str(action)) 
     counter += 1
 
     pkey.reset()
@@ -61,17 +61,17 @@ for action in list(file.readlines()):
     if ToteBox == 1:
         k.tap_key('U', n=1, interval=interval)
 
-    time.sleep(5)
-
+    time.sleep(.5)
+                         
     k.tap_key('M', n=Mat, interval=interval)
     k.tap_key('H', n=HDRI, interval=interval)
     k.tap_key('L', n=Lighting, interval=interval)
 
-    for angle in range(0, 6):
+    for angle in range(0, 8):
         k.tap_key('V', n=1, interval=interval)
         pkey.capture()
-        time.sleep(10*interval)
-                      
+        time.sleep(1*interval)
+
 
 
 # Pause at the end to avoid transitioning away from the game too abruptly

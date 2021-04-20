@@ -56,33 +56,38 @@ class Probe:
     def surface_normal(self):                        
         self.press('r')
 
+    def rtx(self):
+        self.press('d')
+
     def capture(self):
         
+        self.rtx()
+        time.sleep(0.1)
         self.screenshot()
-        time.sleep(0.25)
+
 
         self.no_caustic()
-        time.sleep(0.25)
+        time.sleep(0.05)
         self.screenshot()
-        self.no_caustic()
+        self.rtx()
 
         self.depth()  # depth
-        time.sleep(0.25)
+        time.sleep(0.05)
         self.screenshot()
         self.depth()
 
         self.surface_normal()
-        time.sleep(0.25)
+        time.sleep(0.05)
         self.screenshot()
         self.surface_normal()
 
         self.outline()
-        time.sleep(0.25)
+        time.sleep(0.05)
         self.screenshot()
         self.outline()
 
         self.global_gt()  # global gt
-        time.sleep(0.25)
+        time.sleep(0.05)
         self.screenshot()       
         self.global_gt()
 
