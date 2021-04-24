@@ -18,8 +18,8 @@ def generate_settings(n_settings=3, file_name=None):
 
     file = open(file_name, 'w')
     for i in range(n_settings):
-        Mat = np.random.randint(0, 41)  #choose between 40 materials.
-        HDRI = np.random.randint(0, 30) #choose between 29 HDRI maps.
+        Mat = np.random.randint(0, 43)  #choose between 42 materials.
+        HDRI = np.random.randint(0, 26) #choose between 26 HDRI maps.
         Lighting = np.random.randint(0, 6) #choose Lighting position
         ToteBox = np.random.randint(0,2) #totebox or no totebox
         file.write(','.join([str(Mat), str(HDRI), str(Lighting), str(ToteBox)]))
@@ -67,17 +67,14 @@ class Probe:
 
 
         self.no_caustic()
-        time.sleep(0.05)
         self.screenshot()
         self.rtx()
 
         self.depth()  # depth
-        time.sleep(0.05)
         self.screenshot()
         self.depth()
 
         self.surface_normal()
-        time.sleep(0.05)
         self.screenshot()
         self.surface_normal()
 
