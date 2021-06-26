@@ -1,9 +1,9 @@
 # SuperCaustics
-Caustics Enabled Real-time Simulation based on NVIDIA RTX Branch of UE4
+Caustics Enabled Real-time Simulation using Hardware Raytracing (NvRTX Unreal Engine 4)
 
 
 SuperCaustics uses nVRTX branch of Unreal Engine to generate Photorealistic images of Transparent objects for use in Deep Learning. 
-SC is designed to be plug-and-play user friendly. Run the application, use The supercaustics branch of [Probe](https://github.com/MMehdiMousavi/Probe "Probe, Image Resource Gatherer") to gather images, process the data using the notebook, and train your model using the data.
+SC is designed to be plug-and-play user friendly. Run the application/open the project files, enter your parameters/3D files, Use Probe to gather images, process the data using the notebook, and train your model using the data.
 
 The images can be processed into [ClearGrasp's](https://github.com/Shreeyak/cleargrasp "ClearGrasp") style of data, and can be used after processing with their code. 
 
