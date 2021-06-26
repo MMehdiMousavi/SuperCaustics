@@ -7,7 +7,7 @@ SC is designed to be plug-and-play user friendly. Run the application, use The s
 
 The images can be processed into [ClearGrasp's](https://github.com/Shreeyak/cleargrasp "ClearGrasp") style of data, and can be used after processing with their code. 
 <p align="center">
-  <img src="Assets/Showcase.png" alt="drawing" width="600"/>
+  <img src="Assets/SC.gif" alt="drawing" width="600"/>
 </p>
 <p align="center"> Image from WIP. Code and Application will be released soon.
 
