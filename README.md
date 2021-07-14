@@ -47,8 +47,14 @@ mehdimousavi.redcap[at]gmail[dot]com
 
 **Software Requirements:**
 
+    - (neural networks):
     pip install easytorch pytorch torchvision pillow numpy imageio shutil opencv-python
-    (not required but recomeneded for editing) Unreal Engine 4.26
+    
+    - (supercaustics editor):
+     Unreal Engine 4.26
+     
+    - (probe data gatherer) 
+    pip install pykeyboard
 
 
 ## Training Neural Networks
