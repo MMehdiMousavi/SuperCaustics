@@ -1,12 +1,10 @@
 
 # SuperCaustics
 Caustics Enabled Real-time Simulation using Hardware Raytracing (NvRTX Unreal Engine 4)
+**Official Repository for SuperCaustics: Real-time,  open-source simulation of transparent objects for deep learning applications**
 
-
-SuperCaustics uses nVRTX branch of Unreal Engine to generate Photorealistic images of Transparent objects for use in Deep Learning. 
-SC is designed to be plug-and-play user friendly. Run the application/open the project files, enter your parameters/3D files, Use Probe to gather images, process the data using the notebook, and train your model using the data.
-
-The images can be processed into [ClearGrasp's](https://github.com/Shreeyak/cleargrasp "ClearGrasp") style of data, and can be used after processing with their code. 
+SuperCaustics is a simulation tool made in Unreal Engine for generating massive computer vision datasets that include transparent objects.
+SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Shreeyak/cleargrasp "ClearGrasp").  You can process the data you collect using the [Dataset Creator](https://github.com/MMehdiMousavi/SuperCaustics/blob/main/Dataset%20Creator.ipynb "Dataset Creator Script") into their style of data, though you dont specifically have to use that pipeline. You can also use the [Neural Networks](https://github.com/MMehdiMousavi/SuperCaustics/tree/main/Neural%20Networks "neural networks") provided in this repository.
 
 <p align="center">
   <img src="Assets/SuperCaustics.gif" alt="drawing" width="600"/>
