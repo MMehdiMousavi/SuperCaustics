@@ -35,11 +35,11 @@ If you have questions or comments (or bugs!) please open a github issue or conta
 mehdimousavi.redcap[at]gmail[dot]com
 
   ## Installation
-  This repository is tested with Unreal Engine 4.26 on Windows 10 (SuperCaustics Simulations) and Ubuntu 16.04 (Neural Networks), Python 3.7, Pytorch 1.7.1 (CUDA 10.1) and Easytorch 2.8.3  
+  This repository is tested with Unreal Engine 4.26 on Windows 10 (SuperCaustics Simulations) and Ubuntu 16.04 (Neural Networks), Python 3.7, Pytorch 1.7.1 and Easytorch 2.8.3  
     
    **Hardware Requirements:**
 
-    - nvidia geforce rtx 2060 (or higher) for real-time ray-tracing 
+    - nvidia geforce rtx 2060 for real-time ray-tracing (or higher)
     - intel core i5 7600K (or better)
     - 8 GB RAM (preferred 16 GB)
     - 4 GB disk space
@@ -51,6 +51,16 @@ mehdimousavi.redcap[at]gmail[dot]com
     (not required but recomeneded for editing) Unreal Engine 4.26
 
 
+## Training Neural Networks
+After setting up your data, copy it somewhere accessible to the python code. Then, run: 
 
+    python segmentation_main.py -ph train  -ms 1 -data /path/to/dataset -nw 32 -ep 35 -b 8 -gi 4 -log experiments_supercaustics
 
+**Arguments:**  
 
+ - `-ms` : model scale (`double`) 
+ -   `-nw`: number of worker threads, usually, keep it at half of you cpu threads
+ -    `-ep`: number of epochs to train. (`int`)
+ -  `-ph`: phase. (`train` or `test`)   
+ - `-data`: path to your dataset. use absolute path for percision. 
+ -  `-spl`: split ratio - easytorch will split the data for train/val/test randomly. (example: `-spl  0.7 0.2 0.1`)
