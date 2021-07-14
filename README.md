@@ -17,10 +17,11 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
 **Software Requirements for Neural Networks and Image Processing:**
 
     pip install easytorch pytorch torchvision pillow numpy imageio shutil opencv-python
+    (not required but recomeneded for editing) Unreal Engine 4.26
 
-  **Requirements for running SuperCaustics Simulation:**
+  **Hardware Requirements for running SuperCaustics Simulation:**
 
-    Geforce RTX 2060 (or higher), Intel core i5 7600K (or better), Unreal Engine 4.26 (for editing)
+    Geforce RTX 2060 (or higher), Intel core i5 7600K (or better)
 
 
   
