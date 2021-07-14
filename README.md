@@ -39,7 +39,7 @@ mehdimousavi.redcap[at]gmail[dot]com
     
    **Hardware Requirements:**
 
-    - nvidia geforce rtx 2060 for real-time ray-tracing (or higher)
+    - nvidia geforce rtx 2060 (or higher) for real-time ray-tracing 
     - intel core i5 7600K (or better)
     - 8 GB RAM (preferred 16 GB)
     - 4 GB disk space
