@@ -1,3 +1,4 @@
+
 # SuperCaustics
 Caustics Enabled Real-time Simulation using Hardware Raytracing (NvRTX Unreal Engine 4)
 
@@ -14,6 +15,16 @@ The images can be processed into [ClearGrasp's](https://github.com/Shreeyak/clea
 <p align="center">
   <img src="Assets/Showcase.png" alt="drawing" width="600"/>
 </p>
-<p align="center"> Image from WIP. Code and Application will be released soon.
+<p align="center">
 
-This repo is a work in progress. 
+**Software Requirements for Neural Networks and Image Processing:**
+
+    pip install easytorch pytorch torchvision pillow numpy imageio shutil opencv-python
+
+  **Requirements for running SuperCaustics Simulation:**
+
+    nVIDIA RTX 2060 (or higher), Intel core i5 7600K (or better), Unreal Engine 4.26 (for editing)
+
+
+  
+  This repo is a work in progress. 
