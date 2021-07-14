@@ -45,7 +45,7 @@ mehdimousavi.redcap[at]gmail[dot]com
     - 4 GB disk space
     - ample disk space for raw dataset to occupy
 
-**Software Requirements for Neural Networks and Image Processing:**
+**Software Requirements:**
 
     pip install easytorch pytorch torchvision pillow numpy imageio shutil opencv-python
     (not required but recomeneded for editing) Unreal Engine 4.26
