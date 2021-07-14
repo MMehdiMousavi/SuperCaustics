@@ -62,7 +62,7 @@ TODO
 
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg)
-
+TODO
 
 ## Training Neural Networks
 After setting up your data, copy it somewhere accessible to the python code. Then, run: 
