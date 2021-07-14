@@ -23,7 +23,7 @@ The images can be processed into [ClearGrasp's](https://github.com/Shreeyak/clea
 
   **Requirements for running SuperCaustics Simulation:**
 
-    nVIDIA RTX 2060 (or higher), Intel core i5 7600K (or better), Unreal Engine 4.26 (for editing)
+    Geforce RTX 2060 (or higher), Intel core i5 7600K (or better), Unreal Engine 4.26 (for editing)
 
 
   
