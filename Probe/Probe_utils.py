@@ -18,10 +18,10 @@ def generate_settings(n_settings=3, file_name=None):
 
     file = open(file_name, 'w')
     for i in range(n_settings):
-        Mat = np.random.randint(0, 43)  #choose between 42 materials.
+        Mat = np.random.randint(0, 8)  #13 #choose between 42 materials.
         HDRI = np.random.randint(0, 26) #choose between 26 HDRI maps.
         Lighting = np.random.randint(0, 6) #choose Lighting position
-        ToteBox = np.random.randint(0,2) #totebox or no totebox
+        ToteBox = np.random.randint(0,20) #totebox or no totebox
         file.write(','.join([str(Mat), str(HDRI), str(Lighting), str(ToteBox)]))
         file.write('\n')
     file.close()
@@ -61,27 +61,39 @@ class Probe:
 
     def capture(self):
         
-        self.rtx()
+        self.rtx()     #ON
+        time.sleep(0.2)
+        self.screenshot()
+
+        time.sleep(0.1)
+        self.no_caustic()    #CausticOFF
         time.sleep(0.1)
         self.screenshot()
+        time.sleep(0.1)
+        self.rtx()     #OFF
+        self.no_caustic()        #CuasticON
 
-
-        self.no_caustic()
+        self.global_gt()  # gt
         self.screenshot()
-        self.rtx()
+        self.global_gt()
 
-        self.depth()  # depth
+        self.surface_normal()
+        time.sleep(0.1)
         self.screenshot()
+        time.sleep(0.1)
+        self.surface_normal()
+
+        self.depth()
+        time.sleep(0.1)
+        self.screenshot()
+        time.sleep(0.1)
         self.depth()
 
-        self.surface_normal()
+        self.outline()
+        time.sleep(0.1)
         self.screenshot()
-        self.surface_normal()
-
-        # self.outline()
-        # time.sleep(0.05)
-        # self.screenshot()
-        # self.outline()
+        time.sleep(0.1)
+        self.outline()
         #
         # self.global_gt()  # global gt
         # time.sleep(0.05)
