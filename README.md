@@ -61,7 +61,8 @@ mehdimousavi.redcap[at]gmail[dot]com
 TODO
 
 ## Probe Data Gatherer  
-![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg)
+![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
+
 TODO
 
 ## Training Neural Networks
