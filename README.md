@@ -72,8 +72,10 @@ After setting up your data, copy it somewhere accessible to the python code. The
 **Arguments:**  
 
  - `-ms` : model scale (`double`) 
- -   `-nw`: number of worker threads, usually, keep it at half of you cpu threads
+ -   `-nw`: number of worker threads, usually, keep it at half of you cpu threads (`int`)
+ - `-b`: batch size. (`int`) 
+ - `-gi`: gradient accumulation.  use to increase effective batch size. (`int`)
  -    `-ep`: number of epochs to train. (`int`)
  -  `-ph`: phase. (`train` or `test`)   
- - `-data`: path to your dataset. use absolute path for percision. 
+ - `-data`: path to your dataset. use absolute path for percision. (example: `./home/data/folder/`)
  -  `-spl`: split ratio - easytorch will split the data for train/val/test randomly. (example: `-spl  0.7 0.2 0.1`)
