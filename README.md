@@ -73,7 +73,7 @@ After setting up your data, copy it somewhere accessible to the python code. The
 **Arguments:**  
 
  - `-ms` : model scale (`double`) 
- -   `-nw`: number of worker threads, usually, keep it at half of you cpu threads (`int`)
+ -   `-nw`: number of worker threads, usually, keep it at half of your available cpu threads (`int`)
  - `-b`: batch size. (`int`) 
  - `-gi`: gradient accumulation.  use to increase effective batch size. (`int`)
  -    `-ep`: number of epochs to train. (`int`)
