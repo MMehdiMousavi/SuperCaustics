@@ -63,7 +63,7 @@ TODO
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
 
-TODO
+Probe is a data gathering script that sends control signals to the data-ablation module inside the SuperCaustics simulation.
 
 ## Training Neural Networks
 After setting up your data, copy it somewhere accessible to the python code. Then, run: 
