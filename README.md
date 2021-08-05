@@ -75,8 +75,9 @@ How to use Probe:
 
 
 <p align="center">
-Probe works with any window/application, this is probe running on another project.
   <img src="Assets/Probe.gif" alt="drawing" width="600"/>
+  
+  Probe works with any window/application, this is probe running on another project.
 </p>
 
 
