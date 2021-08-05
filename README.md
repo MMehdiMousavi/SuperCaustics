@@ -116,11 +116,10 @@ Set the bounds of your simulation by adjusting these settings:
 Probe is a data gathering script that sends control signals to the data-ablation module inside the SuperCaustics simulation. Probe works by sending specific keyboard commands to the supercaustics window. 
 How to use Probe:
 
-    Set arguments:
-    -setsize: int #how many scenarios would you like collected.
-    -moves_file: address to a text file #save your moves, for later recreation if needed. 
-    Run Probe.py:
-    -Wait until data is fully collected.
+**Set arguments:** 
+-`setsize`: `int` determines how many scenarios would you like collected. 
+-`moves_file`: `address` save your moves/scenarios, for later recreation if needed.
+ Run [Probe.py](https://github.com/MMehdiMousavi/SuperCaustics/blob/main/Probe/Probe.py) , Wait until data is fully collected.
 
 
 <p align="center">
