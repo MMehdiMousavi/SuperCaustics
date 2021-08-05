@@ -60,7 +60,7 @@ mehdimousavi.redcap[at]gmail[dot]com
 
 
 # Using SuperCaustics
-SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind.  Using SuperCaustics to generate your own data is very easy. 
+SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind.  Using SuperCaustics to generate your own data is very easy. Heres how:
 
 **Step 0: Unreal Engine**
 To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher. You can download Unreal Engine, follow step-by-step instructions and build from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
@@ -74,16 +74,36 @@ you really dont have to do this since SuperCaustics comes with free 3D meshes ma
  3. Go to Content>Logic>Glass_Actors>Master>Actor.bp 
  4. Right-click on Actor.bp, and Create a child blueprint from Actor.bp 
  5. Open the child blueprint you just created. go to viewport, and drag-drop your 3D mesh into static mesh component. 
- 6. Repeat from (1) tocreate as many Glass actors as you wish.
+ 6. Repeat from (1) to create as many Glass actors as you wish.
 
  <p align="left">
-</p>
-<p align="center">
-<img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="600"/>
+<img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="250"/>
 </p>
 
+**Step 2: Setting the bounds of the Simulation**
 
+Using a template scene `content>maps>template>realistic.map` We can easily set up a simulation exactly how we like it. You can **create a duplicate of this scene**, or make your own scene and bring in the components we're about to discuss into the scene yourself.
 
+ 1. The Generator Module
+   <p align="left">
+<img src="Assets/Tutorial_Images/Generator_settings.jpg" alt="drawing" width="250"/>
+</p>
+
+Set the bounds of your simulation by adjusting these settings:
+
+**Objects:**
+
+ - `Object Range From, To` determine a range of objects to be spawned at each generated scenario.
+ - `Objects to spawn` takes an `int` and spawns n number of objects.
+ - `Glass Array` consists of objects within the reach of the Generator. To remove/add items from this array click on the `x` or `+` button.
+ - `Add Force?` Determines if a physics impulse is added to each spawned object upon generation.
+ - `Max Impulse Modifier`  sets the intensity of the impulse added in the beginning of the simulation.
+ - `Spawn Offset Distance` sets the minimum distance between random spawning points.
+
+**Camera:**
+
+ - `Camera Space Normals?` switches between Camera-space and world-space surface normals.
+ - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
 
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
@@ -98,7 +118,7 @@ How to use Probe:
 
 
 <p align="center">
-  <img src="Assets/Probe.gif" alt="drawing" width="200"/>
+  <img src="Assets/Probe.gif" alt="drawing" width="600"/>
   
   Probe works with any window/application, this is probe running on another project.
 </p>
