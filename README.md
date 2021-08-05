@@ -35,7 +35,8 @@ Contact:
 If you have questions or comments (or bugs!) please open a github issue or contact me at:
 mehdimousavi.redcap[at]gmail[dot]com
 
-  ## Installation
+# Installation
+
   This repository is tested with Unreal Engine 4.26 on Windows 10 (SuperCaustics Simulations) and Ubuntu 16.04 (Neural Networks), Python 3.7, Pytorch 1.7.1 and Easytorch 2.8.3  
     
    **Hardware Requirements:**
@@ -58,8 +59,30 @@ mehdimousavi.redcap[at]gmail[dot]com
     pip install pykeyboard
 
 
-## Using SuperCaustics
-SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind. 
+# Using SuperCaustics
+SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind.  Using SuperCaustics to generate your own data is very easy. 
+
+**Step 0: Unreal Engine**
+To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher. You can download Unreal Engine, follow step-by-step instructions and build from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
+
+**Step 1: Importing your own 3D Meshes**
+you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset). To import your 3D meshes, follow these steps: 
+
+ 1. Export 3D mesh into .FBX or any other format accepted by Unreal
+    Engine. 
+ 2. List item Drag .FBX file and drop into a folder inside the UE4 Content browser. 
+ 3. Go to Content>Logic>Glass_Actors>Master>Actor.bp 
+ 4. Right-click on Actor.bp, and Create a child blueprint from Actor.bp 
+ 5. Open the child blueprint you just created. go to viewport, and drag-drop your 3D mesh into static mesh component. 
+ 6. Repeat from (1) tocreate as many Glass actors as you wish.
+
+ <p align="left">
+</p>
+<p align="center">
+<img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="600"/>
+</p>
+
+
 
 
 ## Probe Data Gatherer  
