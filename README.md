@@ -155,5 +155,4 @@ If you end up using SuperCaustics or The Neural Networks, please cite our paper:
       year={2021},
       eprint={2107.11008},
       archivePrefix={arXiv},
-      primaryClass={cs.GR}
-}
+      primaryClass={cs.GR}}
