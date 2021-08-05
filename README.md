@@ -62,10 +62,12 @@ mehdimousavi.redcap[at]gmail[dot]com
 # Using SuperCaustics
 SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind.  Using SuperCaustics to generate your own data is very easy. Heres how:
 
-**Step 0: Unreal Engine**
+## **Step 0: Unreal Engine**
+
 To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher. You can download Unreal Engine, follow step-by-step instructions and build from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
 
-**Step 1: Importing your own 3D Meshes**
+## **Step 1: Importing your own 3D Meshes**
+
 you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset). To import your 3D meshes, follow these steps: 
 
  1. Export 3D mesh into .FBX or any other format accepted by Unreal
@@ -80,7 +82,7 @@ you really dont have to do this since SuperCaustics comes with free 3D meshes ma
 <img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="250"/>
 </p>
 
-**Step 2: Setting the bounds of the Simulation**
+## **Step 2: Setting the bounds of the Simulation**
 
 Using a template scene `content>maps>template>realistic.map` We can easily set up a simulation exactly how we like it. You can **create a duplicate of this scene**, or make your own scene and bring in the components we're about to discuss into the scene yourself.
 
@@ -104,6 +106,9 @@ Set the bounds of your simulation by adjusting these settings:
 
  - `Camera Space Normals?` switches between Camera-space and world-space surface normals.
  - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
+
+2. The Prop Manager Module:
+
 
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
@@ -139,3 +144,16 @@ After setting up your data, copy it somewhere accessible to the python code. The
  -  `-ph`: phase. (`train` or `test`)   
  - `-data`: path to your dataset. use absolute path for percision. (example: `./home/data/folder/`)
  -  `-spl`: split ratio - easytorch will split the data for train/val/test randomly. (example: `-spl  0.7 0.2 0.1`)
+
+
+## Citation:
+If you end up using SuperCaustics or The Neural Networks, please cite our paper: 
+
+    @misc{mousavi2021supercaustics,
+      title={SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications}, 
+      author={Mehdi Mousavi and Rolando Estrada},
+      year={2021},
+      eprint={2107.11008},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR}
+}
