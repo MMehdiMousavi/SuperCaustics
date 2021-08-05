@@ -1,5 +1,6 @@
 
 
+
 # SuperCaustics
  **Official Repository for SuperCaustics: Real-time,  open-source simulation of transparent objects for deep learning applications**
     
@@ -58,12 +59,23 @@ mehdimousavi.redcap[at]gmail[dot]com
 
 
 ## Using SuperCaustics
-TODO
+SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind. 
+
 
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
+Probe is a data gathering script that sends control signals to the data-ablation module inside the SuperCaustics simulation. Probe works by sending specific keyboard commands to the supercaustics window. 
+How to use Probe:
 
-Probe is a data gathering script that sends control signals to the data-ablation module inside the SuperCaustics simulation.
+    Set arguments:
+    -setsize: int #how many scenarios would you like collected.
+    -moves_file: address to a text file #save your moves, for later recreation if needed. 
+    Run Probe.py:
+    -Wait until data is fully collected.
+
+
+
+
 
 ## Training Neural Networks
 After setting up your data, copy it somewhere accessible to the python code. Then, run: 
