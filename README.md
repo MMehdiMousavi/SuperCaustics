@@ -74,7 +74,9 @@ How to use Probe:
     -Wait until data is fully collected.
 
 
-
+<p align="center">
+  <img src="Assets/Probe.gif" alt="drawing" width="600"/>
+</p>
 
 
 ## Training Neural Networks
