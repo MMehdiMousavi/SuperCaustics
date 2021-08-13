@@ -2,7 +2,6 @@ import argparse
 
 """Note: check default_ap for runtime argument usage"""
 from easytorch import default_ap, EasyTorch
-
 from segmentation import *
 
 sep = os.sep
