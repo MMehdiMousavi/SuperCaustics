@@ -145,4 +145,4 @@ class SEGTrainer(ETTrainer):
 
     def new_metrics(self):
         return metric()
-        #return ConfusionMatrix(num_classes=self.num_class)
+
