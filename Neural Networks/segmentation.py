@@ -7,11 +7,9 @@ import torchvision.transforms as tmf
 from PIL import Image as IMG
 from easytorch import ETTrainer, ETDataset, ConfusionMatrix, Prf1a
 from easytorch.vision import (Image, expand_and_mirror_patch, merge_patches, get_chunk_indexes)
-
 from models import UNet
 
 sep = os.sep
-
 CLASS_LABELS = {
     'Background': 0,
     'Caustic': 1,
