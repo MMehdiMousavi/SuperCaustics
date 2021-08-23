@@ -69,7 +69,7 @@ To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26
 
 ## **Step 1: Importing your own 3D Meshes**
 
-you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset). To import your 3D meshes, follow these steps: 
+ To import your 3D meshes, follow these steps: 
 
  1. Export 3D mesh into `.FBX` or any other format accepted by Unreal
     Engine. 
@@ -78,6 +78,8 @@ you really dont have to do this since SuperCaustics comes with free 3D meshes ma
  4. Right-click on `Actor.bp`, and `Create a child blueprint` from `Actor.bp` 
  5. Open the child blueprint you just created. go to viewport, and drag-drop your 3D mesh into `static mesh component`. 
  6. Repeat from (1) to create as many Glass actors as you wish.
+
+you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset).
 
  <p align="left">
 <img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="250"/>
