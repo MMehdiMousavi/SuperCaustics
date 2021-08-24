@@ -54,7 +54,7 @@ mehdimousavi.redcap[at]gmail[dot]com
     pip install easytorch pytorch torchvision pillow numpy imageio shutil opencv-python
     
     - (supercaustics editor):
-     Unreal Engine 4.26
+     NVRTX Unreal Engine 4.26 - Caustics branch
      
     - (probe data gatherer) 
     pip install pykeyboard
