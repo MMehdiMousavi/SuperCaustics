@@ -90,14 +90,18 @@ you really dont have to do this since SuperCaustics comes with free 3D meshes ma
 
 Using a template scene `content>maps>template>realistic.map` We can easily set up a simulation exactly how we like it. You can **create a duplicate of this scene**, or make your own scene and bring in the components we're about to discuss into the scene yourself.
 
- 1. The Generator Module
+ **
+
+**1. The Generator Module**
+
+**
    <p align="left">
 <img src="Assets/Tutorial_Images/Generator_settings.jpg" alt="drawing" width="250"/>
 </p>
 
 Set the bounds of your simulation by adjusting these settings:
 
-**Objects:**
+****1.1 Objects:****
 
  - `Object Range From, To` determine a range of objects to be spawned at each generated scenario.
  - `Objects to spawn` takes an `int` and spawns n number of objects.
@@ -106,14 +110,18 @@ Set the bounds of your simulation by adjusting these settings:
  - `Max Impulse Modifier`  sets the intensity of the impulse added in the beginning of the simulation.
  - `Spawn Offset Distance` sets the minimum distance between random spawning points.
 
-**Camera:**
+****1.2 Camera:****
 
  - `Camera Space Normals?` switches between Camera-space and world-space surface normals.
  - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
 
-2. The Prop Manager Module:
+**2. The Prop Manager Module:**
 
-	This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can output unique colors for uni-material objects. (note the tiger has a different color every time I reset the simulation.)
+This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can generate and output unique colors for uni-material objects at runtime. (note the tiger has a different color every time I reset the simulation.)
+
+<p align="left">
+  <img src="Assets/colors.gif" alt="drawing" width="600"/>
+</p>
 
 
 ## Probe Data Gatherer  
