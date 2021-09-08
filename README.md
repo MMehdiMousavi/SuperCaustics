@@ -3,7 +3,14 @@
 # SuperCaustics
  **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
     
-  This repo is a work in progress. 
+**RELEASE version: 1.00**
+
+|Item| Link |
+|--|--|
+| UE v4.26 - SuperCaustics v1.00 | [Download] (https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
+| SuperCaustics Dataset | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
+
+
 
 SuperCaustics is a simulation tool made in Unreal Engine for generating massive computer vision datasets that include transparent objects.
 SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Shreeyak/cleargrasp "ClearGrasp").  You can process the data you collect using the [Dataset Creator](https://github.com/MMehdiMousavi/SuperCaustics/blob/main/Dataset%20Creator.ipynb "Dataset Creator Script") into their style of data, though you dont specifically have to use that pipeline. You can also use the [Neural Networks](https://github.com/MMehdiMousavi/SuperCaustics/tree/main/Neural%20Networks "neural networks") provided in this repository.
@@ -123,7 +130,7 @@ To set up your own props, you can create your `object` inside unreal engine (or 
   <img src="Assets/Tutorial_Images/propman.jpg" alt="drawing" width="250"/>
 </p>
 
-## **Light Manager **
+## Light Manager 
 
 Light Manager is a small system that stores lighting information (colors, rotations) and handles its runtime operations. 
 Light Manager has a `SuperCaustics` Category where you can change the color of the main light source along with its rotations whenever the `l` control event is pressed.
@@ -132,7 +139,7 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
   <img src="Assets/Tutorial_Images/lightman.jpg" alt="drawing" width="250"/>
 </p>
 
-## ** Blueprint Contoller and Control Events**
+##  Blueprint Contoller and Control Events
  Events, cameras and Data Ablation events are handled by the `level blueprint`. Level blueprint can handle every present object inside the scene. Events are triggered by keyboard control signals (keystrokes). To view and edit the level blueprint, click on `Blueprints` at the top middle of the screen, and click on `Open level blueprint`.
  
 <p align="left">
