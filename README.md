@@ -125,12 +125,15 @@ This module manages the visibility and position of props in each generated scene
 </p>
 
 Setting up props: 
-To set up your own props, you can create your objects inside unreal engine (or elsewhere and import it), find prop manager in `world outliner` (top right of the screen)
+To set up your own props, you can create your `object` inside unreal engine (or elsewhere and import it), find prop manager in `world outliner` (top right of the screen), select Prop manager components and drag and drop your `object` into `static mesh` and `material` components.
 
 <p align="left">
   <img src="Assets/Tutorial_Images/propman.jpg" alt="drawing" width="250"/>
 </p>
 
+**3. Blueprint Contoller and Control Events** 
+
+<iframe src="https://blueprintue.com/render/uc4-cgk0/" scrolling="no" allowfullscreen></iframe>
 
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
