@@ -2,8 +2,9 @@
 
 
 
+
 # SuperCaustics
- **Official Repository for SuperCaustics: Real-time,  open-source simulation of transparent objects for deep learning applications**
+ **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
     
   This repo is a work in progress. 
 
@@ -54,7 +55,7 @@ mehdimousavi.redcap[at]gmail[dot]com
     pip install easytorch pytorch torchvision pillow numpy imageio shutil opencv-python
     
     - (supercaustics editor):
-     Unreal Engine 4.26
+     NVRTX Unreal Engine 4.26 - Caustics branch
      
     - (probe data gatherer) 
     pip install pykeyboard
@@ -65,11 +66,11 @@ SuperCaustics features a fully-fledged automatic scene generation system with co
 
 ## **Step 0: Unreal Engine**
 
-To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher. You can download Unreal Engine, follow step-by-step instructions and build from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
+To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher.  To download Unreal Engine, follow step-by-step instructions to be added to Epic Games Github [here](https://www.unrealengine.com/en-US/ue4-on-github), and afterwards you can access and build UE4 from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
 
 ## **Step 1: Importing your own 3D Meshes**
 
-you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset). To import your 3D meshes, follow these steps: 
+ To import your 3D meshes, follow these steps: 
 
  1. Export 3D mesh into `.FBX` or any other format accepted by Unreal
     Engine. 
@@ -78,6 +79,8 @@ you really dont have to do this since SuperCaustics comes with free 3D meshes ma
  4. Right-click on `Actor.bp`, and `Create a child blueprint` from `Actor.bp` 
  5. Open the child blueprint you just created. go to viewport, and drag-drop your 3D mesh into `static mesh component`. 
  6. Repeat from (1) to create as many Glass actors as you wish.
+
+you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset).
 
  <p align="left">
 <img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="250"/>
@@ -109,6 +112,8 @@ Set the bounds of your simulation by adjusting these settings:
  - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
 
 2. The Prop Manager Module:
+
+	This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can output unique colors for uni-material objects. (note the tiger has a different color every time I reset the simulation.)
 
 
 ## Probe Data Gatherer  
