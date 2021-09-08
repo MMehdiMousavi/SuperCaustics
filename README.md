@@ -3,6 +3,7 @@
 
 
 
+
 # SuperCaustics
  **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
     
@@ -121,6 +122,13 @@ This module manages the visibility and position of props in each generated scene
 
 <p align="left">
   <img src="Assets/colors.gif" alt="drawing" width="600"/>
+</p>
+
+Setting up props: 
+To set up your own props, you can create your objects inside unreal engine (or elsewhere and import it), find prop manager in `world outliner` (top right of the screen)
+
+<p align="left">
+  <img src="Assets/propman.jpg" alt="drawing" width="250"/>
 </p>
 
 
