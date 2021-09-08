@@ -22,7 +22,7 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
 
 |Item| Link |
 |--|--|
-| UE NVRTX-Caustics v4.26 - SuperCaustics v1.00 | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
+| UE NVRTX-Caustics v4.26 - SuperCaustics v1.00 | [Download](https://drive.google.com/file/d/134DyMgzwij5vd3S_22eAoVZnmJowO6Uz/view?usp=sharing) |
 | SuperCaustics Dataset | [Coming Soon](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
  
 **Contact: 
