@@ -61,11 +61,11 @@ mehdimousavi.redcap[at]gmail[dot]com
 # Using SuperCaustics
 SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind.  Using SuperCaustics to generate your own data is very easy. Heres how:
 
-## **Step 0: Unreal Engine**
+## **Unreal Engine**
 
 To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher.  To download Unreal Engine, follow step-by-step instructions to be added to Epic Games Github [here](https://www.unrealengine.com/en-US/ue4-on-github), and afterwards you can access and build UE4 from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
 
-## **Step 1: Importing your own 3D Meshes**
+## **Importing your own 3D Meshes**
 
  To import your 3D meshes, follow these steps: 
 
@@ -83,15 +83,10 @@ you really dont have to do this since SuperCaustics comes with free 3D meshes ma
 <img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="250"/>
 </p>
 
-## **Step 2: Setting the bounds of the Simulation**
+## **Generating Scenes**
 
 Using a template scene `content>maps>template>realistic.map` We can easily set up a simulation exactly how we like it. You can **create a duplicate of this scene**, or make your own scene and bring in the components we're about to discuss into the scene yourself.
 
- **
-
-**1. The Generator Module**
-
-**
    <p align="left">
 <img src="Assets/Tutorial_Images/Generator_settings.jpg" alt="drawing" width="250"/>
 </p>
@@ -112,24 +107,33 @@ Set the bounds of your simulation by adjusting these settings:
  - `Camera Space Normals?` switches between Camera-space and world-space surface normals.
  - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
 
-**2. The Prop Manager Module:**
+## Adding or Modifying Props
 
+**Prop Manager Module:** 
 This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can generate and output unique colors for uni-material objects at runtime. (note the tiger has a different color every time I reset the simulation.)
 
 <p align="left">
   <img src="Assets/colors.gif" alt="drawing" width="600"/>
 </p>
 
-Setting up props: 
+**Setting up props:** 
 To set up your own props, you can create your `object` inside unreal engine (or elsewhere and import it), find prop manager in `world outliner` (top right of the screen), select Prop manager components and drag and drop your `object` into `static mesh` and `material` components.
 
 <p align="left">
   <img src="Assets/Tutorial_Images/propman.jpg" alt="drawing" width="250"/>
 </p>
 
-**4. Blueprint Contoller and Control Events** 
- 
- Events, cameras and Data Ablation events are handled by the level blueprint. Level blueprint can handle every present object inside the scene. Events are triggered by keyboard control signals (keystrokes). To view and edit the level blueprint, click on `Blueprints` at the top middle of the screen, and click on `Open level blueprint`.
+## **Light Manager **
+
+Light Manager is a small system that stores lighting information (colors, rotations) and handles its runtime operations. 
+Light Manager has a `SuperCaustics` Category where you can change the color of the main light source along with its rotations whenever the `l` control event is pressed.
+
+<p align="left">
+  <img src="Assets/Tutorial_Images/lightman.jpg" alt="drawing" width="250"/>
+</p>
+
+## ** Blueprint Contoller and Control Events**
+ Events, cameras and Data Ablation events are handled by the `level blueprint`. Level blueprint can handle every present object inside the scene. Events are triggered by keyboard control signals (keystrokes). To view and edit the level blueprint, click on `Blueprints` at the top middle of the screen, and click on `Open level blueprint`.
  
 <p align="left">
   <img src="Assets/Tutorial_Images/levelbp.jpg" alt="drawing" width="250"/>
