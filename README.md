@@ -7,7 +7,7 @@
 
 |Item| Link |
 |--|--|
-| UE v4.26 - SuperCaustics v1.00 | [Download] (https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
+| UE v4.26 - SuperCaustics v1.00 | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
 | SuperCaustics Dataset | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
 
 
