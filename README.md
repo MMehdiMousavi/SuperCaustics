@@ -1,5 +1,6 @@
 
 
+
 # SuperCaustics
 
 ## Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)
@@ -37,7 +38,7 @@ mehdimousavi.redcap[at]gmail[dot]com**
     - nvidia geforce rtx 2060 for real-time ray-tracing (or higher)
     - intel core i5 7600K (or better)
     - 8 GB RAM (preferred 16 GB)
-    - 4 GB disk space
+    - 20 GB disk space
     - ample disk space for raw dataset to occupy
 
 **Software Requirements:**
