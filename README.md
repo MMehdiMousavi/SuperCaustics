@@ -1,19 +1,10 @@
 
 
 # SuperCaustics
- **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
+
+## Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)
+
     
-<!--**RELEASE version: 1.00**
-
-|Item| Link |
-|--|--|
-| UE v4.26 - SuperCaustics v1.00 | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
-| SuperCaustics Dataset | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
-
--->
-
-
-
 SuperCaustics is a simulation tool made in Unreal Engine for generating massive computer vision datasets that include transparent objects.
 SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Shreeyak/cleargrasp "ClearGrasp").  You can process the data you collect using the [Dataset Creator](https://github.com/MMehdiMousavi/SuperCaustics/blob/main/Dataset%20Creator.ipynb "Dataset Creator Script") into their style of data, though you dont specifically have to use that pipeline. You can also use the [Neural Networks](https://github.com/MMehdiMousavi/SuperCaustics/tree/main/Neural%20Networks "neural networks") provided in this repository.
 
@@ -26,22 +17,16 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
 </p>
 <p align="center">
   
+**RELEASE version: 1.00**
 
-Transparent objects are a very challenging problem in computer vision. They are hard to segment or classify due to their lack of precise boundaries, and there is limited data available for training deep neural networks. As such, current solutions for this problem employ rigid synthetic datasets, which lack flexibility and lead to severe performance degradation when deployed on real-world scenarios. In particular, these synthetic datasets omit features such as refraction, dispersion and caustics due to limitations in the rendering pipeline. To address this issue, we present SuperCaustics, a real-time, open-source simulation of transparent objects designed for deep learning applications. SuperCaustics features extensive modules for stochastic environment creation; uses hardware ray-tracing to support caustics, dispersion, and refraction; and enables generating massive datasets with multi-modal, pixel-perfect ground truth annotations. To validate our proposed system, we trained a deep neural network from scratch to segment transparent objects in difficult lighting scenarios. Our neural network achieved performance comparable to the state-of-the-art on a real-world dataset using only 10% of the training data and in a fraction of the training time. Further experiments show that a model trained with SuperCaustics can segment different types of caustics, even in images with multiple overlapping transparent objects.   To the best of our knowledge, this is the first such result for a model trained on synthetic data.
-  
+|Item| Link |
+|--|--|
+| UE NVRTX-Caustics v4.26 - SuperCaustics v1.00 | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
+| SuperCaustics Dataset | [Coming Soon](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
  
-<p align="center">
-System Overview:
-</p>
-<p align="center">
-<img src="Assets/Diagram.png" alt="drawing" width="600"/>
-</p>
-
-
-
-Contact: 
+**Contact: 
 If you have questions or comments (or bugs!) please open a github issue or contact me at:
-mehdimousavi.redcap[at]gmail[dot]com
+mehdimousavi.redcap[at]gmail[dot]com**
 
 # Installation
 
@@ -70,11 +55,11 @@ mehdimousavi.redcap[at]gmail[dot]com
 # Using SuperCaustics
 SuperCaustics features a fully-fledged automatic scene generation system with compatibility and user-friendliness in mind.  Using SuperCaustics to generate your own data is very easy. Heres how:
 
-## **Unreal Engine**
+## Setting Up Unreal Engine NvRTX
 
 To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher.  To download Unreal Engine, follow step-by-step instructions to be added to Epic Games Github [here](https://www.unrealengine.com/en-US/ue4-on-github), and afterwards you can access and build UE4 from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
 
-## **Importing your own 3D Meshes**
+## Importing your own 3D Meshes
 
  To import your 3D meshes, follow these steps: 
 
@@ -118,7 +103,7 @@ Set the bounds of your simulation by adjusting these settings:
 
 ## Adding or Modifying Props
 
-**Prop Manager Module:** 
+### Prop Manager Module:
 This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can generate and output unique colors for uni-material objects at runtime. (note the tiger has a different color every time I reset the simulation.)
 
 <p align="left">
@@ -148,7 +133,7 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
   <img src="Assets/Tutorial_Images/levelbp.jpg" alt="drawing" width="250"/>
 </p>
  
- Scene Control Signals:
+ ### Scene Control Signals:
  - `m` : changing backdrop material 
  - `d`: toggle raytracing and DLSS 
  -   `l`: lights - rotates the primary light source in `LightManager`
@@ -156,16 +141,16 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
  - `c`: Take screenshot at current resolution. `(to change your resolution, run the command r.setres 1920x1080w)` *
  -  `v`: Switch views (cameras)
  
-Ground-truth Control Signals:
+### Ground-truth Control Signals:
  - `g`: show transparent object masks
  - `e`: Toggle mesh caustics
  - `t`: show depth ground-truth. 
  - `r`: show surface normals ground-truth.   
  - `o`: show outlines ground-truth
  
-Notes: 
+### Notes: 
  - To save system resources during fast restarts, RTX and DLSS are set to disabled by default, so you need to press `D` everytime before taking screenshots.
- - Due to the nature of real-time ray tracing (raytracing at lower resolution, upscale and denoise) screenshots `c` made at non-native resolutions will appear noisy, since there is no denoise at the upper levels where screenshots are captured. 
+ - Due to the nature of real-time ray tracing (raytracing at lower resolution, upscale and denoise) screenshots made at non-native resolutions will appear noisy, since there is no denoise at the upper levels where screenshots are captured. This is why `c` is set to only taking screenshots at native resolution. However, if you wish to override that, you can set a custom screenshot size in `level blueprint` or by using `HighResShot` console command.
  - If you wish to, you can edit these key events inside the `level blueprint`.
  - surface normals ground truth `r` only shows the surface normal modality you choose in `Generator module`.
 
@@ -182,7 +167,6 @@ How to use Probe:
  - `moves_file`: `address` save your moves/scenarios, for later recreation if needed.
 
  Run [Probe.py](https://github.com/MMehdiMousavi/SuperCaustics/blob/main/Probe/Probe.py) & Wait until data is fully collected.
-
 
 <p align="center">
   <img src="Assets/Probe.gif" alt="drawing" width="600"/>
