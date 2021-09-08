@@ -1,9 +1,5 @@
 
 
-
-
-
-
 # SuperCaustics
  **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
     
@@ -131,9 +127,35 @@ To set up your own props, you can create your `object` inside unreal engine (or 
   <img src="Assets/Tutorial_Images/propman.jpg" alt="drawing" width="250"/>
 </p>
 
-**3. Blueprint Contoller and Control Events** 
+**4. Blueprint Contoller and Control Events** 
+ 
+ Events, cameras and Data Ablation events are handled by the level blueprint. Level blueprint can handle every present object inside the scene. Events are triggered by keyboard control signals (keystrokes). To view and edit the level blueprint, click on `Blueprints` at the top middle of the screen, and click on `Open level blueprint`.
+ 
+<p align="left">
+  <img src="Assets/Tutorial_Images/levelbp.jpg" alt="drawing" width="250"/>
+</p>
+ 
+ Scene Control Signals:
+ - `m` : changing backdrop material 
+ - `d`: toggle raytracing and DLSS 
+ -   `l`: lights - rotates the primary light source in `LightManager`
+ - `q`: fast restart simulation
+ - `c`: Take screenshot at current resolution. `(to change your resolution, run the command r.setres 1920x1080w)` *
+ -  `v`: Switch views (cameras)
+ 
+Ground-truth Control Signals:
+ - `g`: show transparent object masks
+ - `e`: Toggle mesh caustics
+ - `t`: show depth ground-truth. 
+ - `r`: show surface normals ground-truth.   
+ - `o`: show outlines ground-truth
+ 
+Notes: 
+ - To save system resources during fast restarts, RTX and DLSS are set to disabled by default, so you need to press `D` everytime before taking screenshots.
+ - Due to the nature of real-time ray tracing (raytracing at lower resolution, upscale and denoise) screenshots `c` made at non-native resolutions will appear noisy, since there is no denoise at the upper levels where screenshots are captured. 
+ - If you wish to, you can edit these key events inside the `level blueprint`.
+ - surface normals ground truth `r` only shows the surface normal modality you choose in `Generator module`.
 
-<iframe src="https://blueprintue.com/render/uc4-cgk0/" scrolling="no" allowfullscreen></iframe>
 
 ## Probe Data Gatherer  
 ![Probe is named after the Protoss Resource gatherers in Starcraft. Yes, I am a game nerd.](Assets/Probe.jpg) 
