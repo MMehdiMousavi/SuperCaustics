@@ -3,12 +3,14 @@
 # SuperCaustics
  **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
     
-**RELEASE version: 1.00**
+<!--**RELEASE version: 1.00**
 
 |Item| Link |
 |--|--|
 | UE v4.26 - SuperCaustics v1.00 | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
 | SuperCaustics Dataset | [Download](https://drive.google.com/drive/folders/1KjmJ0ybkh6MrN5xVm7nJERQhozvGHSpu?usp=sharing) |
+
+-->
 
 
 
