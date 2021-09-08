@@ -2,6 +2,7 @@
 
 
 
+
 # SuperCaustics
  **Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)**
     
@@ -65,7 +66,7 @@ SuperCaustics features a fully-fledged automatic scene generation system with co
 
 ## **Step 0: Unreal Engine**
 
-To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher. You can download Unreal Engine, follow step-by-step instructions and build from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
+To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher.  To download Unreal Engine, follow step-by-step instructions to be added to Epic Games Github [here](https://www.unrealengine.com/en-US/ue4-on-github), and afterwards you can access and build UE4 from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
 
 ## **Step 1: Importing your own 3D Meshes**
 
@@ -111,6 +112,8 @@ Set the bounds of your simulation by adjusting these settings:
  - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
 
 2. The Prop Manager Module:
+
+	This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can output unique colors for uni-material objects. (note the tiger has a different color every time I reset the simulation.)
 
 
 ## Probe Data Gatherer  
