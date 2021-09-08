@@ -31,7 +31,7 @@ Transparent objects are a very challenging problem in computer vision. They are 
   
  
 <p align="center">
-**System Overview:**
+System Overview:
 </p>
 <p align="center">
 <img src="Assets/Diagram.png" alt="drawing" width="600"/>
