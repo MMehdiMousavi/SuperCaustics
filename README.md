@@ -1,6 +1,7 @@
 
 
 
+
 # SuperCaustics
 
 ## Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)
@@ -118,6 +119,29 @@ To set up your own props, you can create your `object` inside unreal engine (or 
   <img src="Assets/Tutorial_Images/propman.jpg" alt="drawing" width="250"/>
 </p>
 
+## Backdrop
+
+Backdrop is a Blueprint system with the ability to detect and cycle through its `materials` at runtime. You can add or remove any `material` or `material instance` from the material bank found within `AIP CORE` section in the Backdrop's detail panel (see below)
+
+<p align="left">
+  <img src="Assets/Tutorial_Images/Backdrop.jpg" alt="drawing" width="250"/>
+</p>
+
+Backdrop looks for `m` key event to change its material at runtime. 
+
+## HDRI Backdrop 
+
+HDRI maps are used to dictate diffused lighting and reflection patterns on specular items. for instance, if you wanted your glass objects to reflect flourecent lights, you can do that with HDRI Bakcdrops. 
+
+HDRI Backdrop system is adapted from a similar engine plugin, to be compatible with SuperCaustics. Our version is capable of swapping HDRI Backdrops during runtime.
+HDRI Backdrop works similarly as `Backdrop`. You can download a vast array of HDRI maps from the internet, drag and drop them in the `HDRI Bank` in the details panel, and you should be good to go. 
+
+<p align="left">
+  <img src="Assets/Tutorial_Images/HDRIBackdrop.jpg" alt="drawing" width="250"/>
+</p>
+
+HDRI Backdrop looks for `h` key to change the scene HDRI mapping at runtime.
+
 ## Light Manager 
 
 Light Manager is a small system that stores lighting information (colors, rotations) and handles its runtime operations. 
@@ -137,6 +161,7 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
  ### Scene Control Signals:
  - `m` : changing backdrop material 
  - `d`: toggle raytracing and DLSS 
+ - `h`: Cycles through `HDRI Bank` array inside the `HDRIBackdrops` system for lighting profile and reflections.
  -   `l`: lights - rotates the primary light source in `LightManager`
  - `q`: fast restart simulation
  - `c`: Take screenshot at current resolution. `(to change your resolution, run the command r.setres 1920x1080w)` *
