@@ -34,7 +34,7 @@ mehdimousavi.redcap[at]gmail[dot]com**
 
 # Installation
 
-  This repository is tested with Unreal Engine 4.26.1 on Windows 10 (SuperCaustics Simulations) and Ubuntu 16.04 (Neural Networks), Python 3.7, Pytorch 1.7.1 and Easytorch 2.8.3  
+  This repository is tested with Unreal Engine 4.26.1 on Windows 10 (SuperCaustics Editor) and Ubuntu 16.04 (Neural Networks), Python 3.7, Pytorch 1.7.1 and Easytorch 2.8.3  
     
    **Hardware Requirements:**
 
