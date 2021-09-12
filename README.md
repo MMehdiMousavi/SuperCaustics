@@ -123,7 +123,7 @@ To set up your own props, you can create your `object` inside unreal engine (or 
 
 ## Backdrop
 
-Backdrop is a Blueprint system with the ability to detect and cycle through its `materials` at runtime. You can add or remove any `material` or `material instance` from the material bank found within `AIP CORE` section in the Backdrop's detail panel (see below)
+Backdrop is a Blueprint system with the ability to detect and cycle through its `materials` at runtime. You can add or remove any `material` or `material instance` to the material bank found within `AIP CORE` section in the Backdrop's detail panel (see below)
 
 <p align="left">
   <img src="Assets/Tutorial_Images/Backdrop.jpg" alt="drawing" width="250"/>
