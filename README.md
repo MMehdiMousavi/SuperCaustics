@@ -75,7 +75,7 @@ To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26
  5. Open the child blueprint you just created. go to viewport, and drag-drop your 3D mesh into `static mesh component`. 
  6. Repeat from (1) to create as many Glass actors as you wish.
 
-you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for Cleargrasp dataset).
+you really dont have to do this since SuperCaustics comes with free 3D meshes made for transparent object detection (curated for SuperCaustics dataset).
 
  <p align="left">
 <img src="Assets/Tutorial_Images/static_mesh.jpg" alt="drawing" width="250"/>
