@@ -168,6 +168,7 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
  - `q`: fast restart simulation
  - `c`: Take screenshot at current resolution. `(to change your resolution, run the command r.setres 1920x1080w)` *
  -  `v`: Switch views (cameras)
+ -  `u`: Summon Blue ToteBox prop
  
 ### Ground-truth Control Signals:
  - `g`: show transparent object masks
