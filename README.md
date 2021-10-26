@@ -20,6 +20,12 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
 <p align="center">
   
 **RELEASE version: 1.00**
+    
+ 
+**Upcoming Features in version 1.01:**
+- `class and instance labeling` automatic labeling of objects with class tracking and instance counting support
+For suggesting future features, please open a discussion in Issues.    
+
 
 |Item| Link |
 |--|--|
