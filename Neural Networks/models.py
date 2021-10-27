@@ -83,8 +83,3 @@ class UNet(nn.Module):
             c = (bypass.size()[2] - upsampled.size()[2]) // 2
             bypass = F.pad(bypass, (-c, -c, -c, -c))
         return torch.cat((upsampled, bypass), 1)
-
-#debug
-# m = UNet(1, 2, 4)
-# torch_total_params = sum(p.numel() for p in m.parameters() if p.requires_grad)
-# print('Total Params:', torch_total_params)
