@@ -186,7 +186,7 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
  - `o`: show outlines ground-truth
  
 ### Notes: 
- - To save system resources during fast restarts, RTX and DLSS are set to disabled by default, so you need to press `D` everytime before taking screenshots.
+ - To save system resources during fast restarts, RTX and DLSS are set to disabled by default, so you need to press `D` everytime before taking screenshots. (Probe does that automatically.)
  - Due to the nature of real-time ray tracing (raytracing at lower resolution, upscale and denoise) screenshots made at non-native resolutions will appear noisy, since there is no denoise at the upper levels where screenshots are captured. This is why `c` is set to only taking screenshots at native resolution. However, if you wish to override that, you can set a custom screenshot size in `level blueprint` or by using `HighResShot` console command.
  - If you wish to, you can edit these key events inside the `level blueprint`.
  - surface normals ground truth `r` only shows the surface normal modality you choose in `Generator module`.
