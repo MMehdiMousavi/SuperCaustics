@@ -59,11 +59,13 @@ for action in list(file.readlines()):
     print("settings: " + str(action)) 
     counter += 1
 
+   
     pkey.reset()
 
     if ToteBox % 20 == 0:
         k.tap_key('U', n=1, interval=interval)
 
+     #Wait for physics to settle & Textures to load. Adjust to system performance
     time.sleep(5)
                          
     k.tap_key('M', n=Mat, interval=interval)
