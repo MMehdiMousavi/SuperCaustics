@@ -66,8 +66,8 @@ for action in list(file.readlines()):
 
     time.sleep(5)
                          
-    #k.tap_key('M', n=Mat, interval=interval)
-    # k.tap_key('H', n=HDRI, interval=interval)
+    k.tap_key('M', n=Mat, interval=interval)
+    k.tap_key('H', n=HDRI, interval=interval)
 
     for angle in range(0, 12):
         k.tap_key('V', n=1, interval=interval)
@@ -75,12 +75,12 @@ for action in list(file.readlines()):
         time.sleep(1*interval)
 
 
-    # for lighting in range(0,5):
-    #     k.tap_key('L', n=1, interval=interval)
-    #     for angle in range(0, 12):
-    #         k.tap_key('V', n=1, interval=interval)
-    #         pkey.capture()
-    #         time.sleep(1*interval)
+    for lighting in range(0,5):
+        k.tap_key('L', n=1, interval=interval)
+        for angle in range(0, 12):
+            k.tap_key('V', n=1, interval=interval)
+            pkey.capture()
+            time.sleep(1*interval)
 
 
 
