@@ -70,7 +70,7 @@ SuperCaustics features a fully-fledged automatic scene generation system with co
 
 ## Setting Up Unreal Engine NvRTX
 
-To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher.  To download Unreal Engine, follow step-by-step instructions to be added to Epic Games Github [here](https://www.unrealengine.com/en-US/ue4-on-github), and afterwards you can access and build UE4 from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26).
+To use SuperCaustics Editor, you need a compatible version of Unreal Engine 4.26x or higher.  To download Unreal Engine, follow step-by-step instructions to be added to Epic Games Github [here](https://www.unrealengine.com/en-US/ue4-on-github), and afterwards you can access and build UE4 from source [here](https://github.com/NvRTX/UnrealEngine/tree/NvRTX_Caustics-4.26). You can also download the engine from Here: [Download NvRTX UE4.26.1-Caustics](https://drive.google.com/file/d/1ITDFCYk1eINfp17oSqFJ9kXmzEJXLLve/view?usp=sharing)
 
 ## Importing your own 3D Meshes
 
