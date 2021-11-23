@@ -1,7 +1,4 @@
 
-
-
-
 # SuperCaustics
 
 ## Official Repository for [SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications](https://arxiv.org/abs/2107.11008)
