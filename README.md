@@ -227,7 +227,7 @@ After setting up your data, copy it somewhere accessible to the python code. The
 
 
 ## Citation:
-If you end up using SuperCaustics or The Neural Networks, please cite our paper: 
+If you end up using SuperCaustics or The Neural Networks, please cite all papers below: 
 
     @misc{mousavi2021supercaustics,
       title={SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications}, 
@@ -236,3 +236,19 @@ If you end up using SuperCaustics or The Neural Networks, please cite our paper:
       eprint={2107.11008},
       archivePrefix={arXiv},
       primaryClass={cs.GR}}
+      
+      @InProceedings{10.1007/978-3-030-64559-5_41,
+       author="Mousavi, Mehdi
+       and Khanal, Aashis and Estrada, Rolando",
+       title="AI Playground: Unreal Engine-Based Data Ablation Tool for Deep Learning",
+       booktitle="Advances in Visual Computing",
+       year="2020",
+       publisher="Springer International Publishing",
+       address="Cham",
+       pages="518--532",
+       isbn="978-3-030-64559-5"}
+
+      
+      
+
+
