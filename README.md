@@ -237,16 +237,16 @@ If you end up using SuperCaustics or The Neural Networks, please cite all papers
       archivePrefix={arXiv},
       primaryClass={cs.GR}}
       
-      @InProceedings{10.1007/978-3-030-64559-5_41,
-       author="Mousavi, Mehdi
-       and Khanal, Aashis and Estrada, Rolando",
-       title="AI Playground: Unreal Engine-Based Data Ablation Tool for Deep Learning",
-       booktitle="Advances in Visual Computing",
-       year="2020",
-       publisher="Springer International Publishing",
-       address="Cham",
-       pages="518--532",
-       isbn="978-3-030-64559-5"}
+    @InProceedings{10.1007/978-3-030-64559-5_41,
+      author="Mousavi, Mehdi
+      and Khanal, Aashis and Estrada, Rolando",
+      title="AI Playground: Unreal Engine-Based Data Ablation Tool for Deep Learning",
+      booktitle="Advances in Visual Computing",
+      year="2020",
+      publisher="Springer International Publishing",
+      address="Cham",
+      pages="518--532",
+      isbn="978-3-030-64559-5"}
 
       
       
