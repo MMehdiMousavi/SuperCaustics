@@ -34,7 +34,7 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
     
 
 **Contact: 
-If you have questions or comments (or bugs!) please open a github issue or contact me at:
+If you have questions, comments (or bugs!) please open a github issue or contact me at:
 mehdimousavi.redcap[at]gmail[dot]com**
 
 # Installation
