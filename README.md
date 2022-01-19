@@ -113,7 +113,7 @@ Set the bounds of your simulation by adjusting these settings:
 ## Adding or Modifying Props
 
 ### Prop Manager Module:
-This module manages the visibility and position of props in each generated scene. You can click on each prop and change its properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can generate and output unique colors for uni-material objects at runtime. (note the tiger has a different color every time I reset the simulation.)
+This module manages the visibility and position of props in each generated scene. You can click on each prop and change it's properties however you wish, and it will be placed randomly in each iteration of the simulation. Out of the box, prop manager supports up to 6 unique props, and It can generate and output unique colors for uni-material objects at runtime. (note the tiger has a different color every time I reset the simulation.)
 
 <p align="left">
   <img src="Assets/colors.gif" alt="drawing" width="600"/>
