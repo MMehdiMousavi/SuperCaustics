@@ -25,7 +25,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(parents=[default_ap], add_help=False)
     ap.add_argument('-ms', '--model_scale', default=1, type=int, help='model_scale')
     ap.add_argument('-cls', '--classification_mode', default='Multi', type=str,
-                    help='Classification mode(Multi, Couch, ...)')
+                    help='Classification mode(Multiclass classifier...)')
 
     """Run as: python segmentation_main.py -ph train -b 4 -e 251 -ms 1 -data datasets"""
     runner = EasyTorch(dataspecs=[SEG_DATASET], args=ap, load_sparse=True, num_channel=3)
