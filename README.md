@@ -227,7 +227,7 @@ After setting up your data, copy it somewhere accessible to the python code. The
 
 
 ## Citation:
-If you end up using SuperCaustics or The Neural Networks, please cite all papers below: 
+If you end up using SuperCaustics or The Neural Networks, please cite the papers below: 
 
     @misc{mousavi2021supercaustics,
       title={SuperCaustics: Real-time, open-source simulation of transparent objects for deep learning applications}, 
