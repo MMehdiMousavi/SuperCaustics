@@ -19,10 +19,10 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
 **RELEASE version: 1.00**
     
  
-**Upcoming Features in version 1.1:**
+<!-- **Upcoming Features in version 1.1:**
 - `class and instance labeling` automatic labeling of objects with class tracking and instance counting support.
 - `macros, bug fixes and cleanups` Created modular blueprint macros for fundamental tasks that could be used elsewhere in the project. 
-- `features` automatic camera-space groundtruth materials for complex custom objects
+- `features` automatic camera-space groundtruth materials for complex custom objects -->
     
     For suggesting future features, please open a discussion in Issues.    
 
