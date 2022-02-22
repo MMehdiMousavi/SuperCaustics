@@ -30,7 +30,7 @@ SuperCaustics is specifically compatible with [ClearGrasp](https://github.com/Sh
 |Item| Link |
 |--|--|
 | SuperCaustics v1.00 Project Files (Must run on [NvRTX UE4.26-Caustics](https://drive.google.com/file/d/1ITDFCYk1eINfp17oSqFJ9kXmzEJXLLve/view?usp=sharing))| [Download](https://drive.google.com/file/d/134DyMgzwij5vd3S_22eAoVZnmJowO6Uz/view?usp=sharing) |
-| SuperCaustics Dataset | [Coming Soon](lens.cs.gsu.edu) |
+| SuperCaustics Dataset | [Download](https://drive.google.com/file/d/1WMe4EDrWPL7oEjd8l0GhcwswFiLUJVd_/view?usp=sharing) |
     
 
 **Contact: 
