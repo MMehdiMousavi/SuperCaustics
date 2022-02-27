@@ -159,6 +159,8 @@ Light Manager has a `SuperCaustics` Category where you can change the color of t
   <img src="Assets/Tutorial_Images/lightman.jpg" alt="drawing" width="250"/>
 </p>
 
+please note that sizeof color map == sizeof rotation map
+
 ##  Blueprint Contoller and Control Events
  Events, cameras and Data Ablation events are handled by the `level blueprint`. Level blueprint can handle every present object inside the scene. Events are triggered by keyboard control signals (keystrokes). To view and edit the level blueprint, click on `Blueprints` at the top middle of the screen, and click on `Open level blueprint`.
  
