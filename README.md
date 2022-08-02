@@ -109,7 +109,9 @@ Set the bounds of your simulation by adjusting these settings:
 ****1.2 Camera:****
 
  - `Camera Space Normals?` switches between Camera-space and world-space surface normals.
- - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera.
+ - `Intel Realsense Camera?` switches between SuperCaustics custom camera and a simulated Intel Realsense camera. 
+
+you can simulate any camera you want by looking at the physical sensor & lens specifications, and changing the settings on the camera module accordingly. This is important because the image projection with various cameras is different, and objects may look different in one camera compared to another.
 
 ## Adding or Modifying Props
 
